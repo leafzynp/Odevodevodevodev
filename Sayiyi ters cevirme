@@ -1,0 +1,18 @@
+package com.mycompany.terscevirme;
+
+import java.util.Scanner;
+
+public class TersCevirme {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("sayi gir");
+        int sayi = sc.nextInt();
+        int ters = 0;
+        while (sayi > 0) {
+            int basamak = sayi % 10;
+              ters = ters * 10 + basamak;
+            sayi = sayi / 10;
+        }
+        System.out.println("Ters sayi: " + ters);
+       }
+   }

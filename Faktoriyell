@@ -1,0 +1,17 @@
+package com.mycompany.faktoriyel;
+
+import java.util.Scanner;
+
+public class Faktoriyel {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in)
+        System.out.println("sayi gir");      int sayi = sc.nextInt()     if (sayi < 0) {
+            System.out.println("Negatif sayilarin faktoriyeli hesaplanamaz");
+        } else {         int faktoriyel = 1;
+            for (int i = 1; i <= sayi; i++) {
+             faktoriyel = faktoriyel * i;
+          }
+        System.out.println("Faktoriyel: " + faktoriyel);
+          }
+         }
+}

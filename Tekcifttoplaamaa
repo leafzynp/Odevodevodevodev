@@ -1,0 +1,24 @@
+package com.mycompany.tekcift;
+
+import java.util.Scanner;
+
+public class TekCift {
+       public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("n sayisini gir");
+        int n = sc.nextInt();
+        int tek = 0      int cift = 0;
+        for (int i = 1; i <= n; i++) {
+          if (i % 2 == 0) {
+                cift = cift + i;
+         } else {
+                tek = tek + i; 
+              }
+           }
+        System.out.println("tek sayilarinn toplami: " + tek);
+        System.out.println("cift sayilarinn toplami: " + cift);
+           }
+    
+
+
+}

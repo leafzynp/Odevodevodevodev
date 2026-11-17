@@ -1,0 +1,21 @@
+package com.mycompany.basamak;
+import java.util.Scanner;
+public class Basamak {
+   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("sayi gir");
+        int sayi = sc.nextInt()        int basamak = 0;
+        if (sayi == 0) {
+            basamak = 1;
+        } else {
+            while (sayi != 0) {
+                sayi = sayi / 10; basamak++;
+            }
+        }
+        System.out.println("Basamak sayisi: " + basamak);
+    }
+    
+
+
+
+}
